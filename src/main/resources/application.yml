@@ -1,14 +1,39 @@
-security:
-  oauth2:
-    client:
-      #clientId: 233668646673605
-      clientId: 1817888258498362
-      #clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
-      clientSecret: 0ce4abf519a32eb11f1dde6ea989ecd8
-      accessTokenUri: https://graph.facebook.com/oauth/access_token
-      userAuthorizationUri: https://www.facebook.com/dialog/oauth
-      tokenName: oauth_token
-      authenticationScheme: query
-      clientAuthenticationScheme: form
-    resource:
-      userInfoUri: https://graph.facebook.com/me
+#security:
+#  oauth2:
+#    client:
+#      #clientId: 233668646673605
+#      clientId: 1817888258498362
+#      #clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
+#      clientSecret: 0ce4abf519a32eb11f1dde6ea989ecd8
+#      accessTokenUri: https://graph.facebook.com/oauth/access_token
+#      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+#      tokenName: oauth_token
+#      authenticationScheme: query
+#      clientAuthenticationScheme: form
+#    resource:
+#      userInfoUri: https://graph.facebook.com/me
+
+facebook:
+  client:
+#    clientId: 233668646673605
+    clientId: 1817888258498362
+#    clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
+    clientSecret: 0ce4abf519a32eb11f1dde6ea989ecd8
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://graph.facebook.com/me
+
+google:
+  client:
+    clientId: 342962270723-ih29rpu8iauev2oenaj4svutmgv6o16p.apps.googleusercontent.com
+    clientSecret: C5YvGslunJ17VeEWAaN9z8zj
+    accessTokenUri: https://accounts.google.com/o/oauth2/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+    clientAuthenticationScheme: form
+    scope: openid email profile
+  resource:
+    userInfoUri: https://www.googleapis.com/plus/v2/people/me
